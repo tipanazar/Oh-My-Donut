@@ -3,11 +3,11 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://tipanazar.github.io/Oh-My-Donut",
+  "homepage": "https://tipanazar.github.io/oh-my-donut",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /minions/"
+    "build": "parcel build src/*.html --public-url /oh-my-donut/"
   },
   "repository": {
     "type": "git",
