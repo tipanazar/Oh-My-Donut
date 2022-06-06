@@ -13,4 +13,4 @@ $(document).ready(function(){var e=$(".reviews__number");$(".slider").on("init r
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/about-us.js"),require("./js/program-btn.js"),require("./js/modal.js"),require("./js/header-btn.js"),require("./js/slider.js");
 },{"./sass/main.scss":"clu1","./js/about-us.js":"ethL","./js/program-btn.js":"iyXr","./js/modal.js":"RSqK","./js/header-btn.js":"NknK","./js/slider.js":"wzuc"}]},{},["Focm"], null)
-//# sourceMappingURL=/oh-my-donut/src.95822f7a.js.map
+//# sourceMappingURL=/Oh-My-Donut/src.819daec2.js.map
