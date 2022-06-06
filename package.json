@@ -1,13 +1,13 @@
 {
-  "name": "parcel-project-template",
+  "name": "Oh-My-Donut",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://tipanazar.github.io/oh-my-donut",
+  "homepage": "https://tipanazar.github.io/Oh-My-Donut",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /oh-my-donut/"
+    "build": "parcel build src/*.html --public-url /Oh-My-Donut/"
   },
   "repository": {
     "type": "git",
