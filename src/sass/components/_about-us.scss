@@ -1,0 +1,93 @@
+.about-us-title {
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+  font-family: var(--secondary-text-font);
+  @include mq(tablet) {
+    text-align: start;
+  }
+  @include mq(desktop) {
+    text-align: start;
+    font-size: 36px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+}
+.about-us-text {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+
+  @include mq(desktop) {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &--hidden {
+    @include mq(notDesktop) {
+      display: none;
+    }
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &.is-visible {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+.about-us-btn {
+  font-family: var(--secondary-text-font);
+  background-color: transparent;
+  border: 0px;
+  color: var(--accent-text-color);
+  font-size: 18px;
+  // line-height: 3.6;
+  text-align: center;
+  padding: 0;
+
+  @include mq(desktop) {
+    display: none;
+  }
+  .btn-text {
+    display: none;
+
+    &.is-shown {
+      display: block;
+    }
+  }
+}
+
+.about-us-bloks {
+  @include mq(tablet) {
+    display: block;
+    width: 336px;
+  }
+  @include mq(desktop) {
+    display: block;
+    width: 365px;
+    margin-left: 76px;
+    margin-top: 55px;
+  }
+}
+.about-us-container {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+.about-us-image {
+  @include mq(tablet-only) {
+    margin-right: 25px;
+    width: 329.65px;
+    height: 352px;
+  }
+  @include mq(desktop-only) {
+    margin-right: 76px;
+    width: 512px;
+    height: 546.71px;
+  }
+}

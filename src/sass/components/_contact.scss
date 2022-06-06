@@ -1,0 +1,108 @@
+.contacts {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @include mq(tablet) {
+    padding-top: 51px;
+  }
+  @include mq(desktop) {
+    padding-top: 77px;
+    padding-bottom: 40px;
+  }
+}
+
+.form-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input-text {
+    margin-top: 25px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    @include mq(desktop){
+      font-size: 18px;
+    }
+  }
+
+  &__label-contacts {
+    padding-bottom: 35px;
+    // padding-top: 35px;
+    text-align: center;
+  }
+  @include mq(desktop) {
+    // padding-top: 50px;
+  }
+
+  &__input {
+    background-color: transparent;
+    outline: transparent;
+    width: 265px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    border-bottom: 1px solid var(--accent-text-color);
+
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+      width: 430px;
+    }
+
+    &::placeholder {
+      color: var(--placeholder-text);
+    }
+    &:focus:invalid {
+      border: 1px solid var(--form-helper-color);
+    }
+  }
+  // Input wrapper
+  &__input-wrapper {
+    position: relative;
+    // margin-bottom: 25px;
+
+    &:focus-within .form-contacts__input-helper {
+      opacity: 1;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 17px;
+    }
+  }
+  &__input-helper {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    opacity: 0;
+    color: var(--form-helper-color);
+    font-size: 12px;
+    transition: opacity 250ms var(--animation);
+
+    @include mq(tablet) {
+      top: 100%;
+    }
+  }
+  // Button input
+  &__button {
+    margin-top: 37px;
+    width: 145px;
+    height: 40px;
+
+    @include mq(tablet) {
+      margin-top: 27px;
+    }
+
+    @include mq(desktop) {
+      margin-top: 27px;
+      width: 158px;
+      height: 45px;
+    }
+  }
+}
